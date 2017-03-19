@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.gfd.express.ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/ed_express_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="快递公司"
+            android:enabled="false"
+            android:focusable="false"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="22sp"
+            android:paddingLeft="6dp"
+            android:background="@drawable/ed_main_bg"/>
+
+        <ImageView
+            android:id="@+id/img_mian_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_mian_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/ed_express_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="快递单号"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="22sp"
+            android:paddingLeft="6dp"
+            android:maxLines="1"
+            android:background="@drawable/ed_main_bg"/>
+
+        <ImageView
+            android:id="@+id/img_mian_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_main_clear"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:background="@drawable/item"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:onClick="bt_query"/>
+</LinearLayout>
